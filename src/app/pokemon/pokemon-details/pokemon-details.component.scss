@@ -1,0 +1,7 @@
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  > h2 {
+    margin-top: 30px;
+  }
+}

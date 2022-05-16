@@ -1,0 +1,18 @@
+<div class="header-row">
+  <img [src]="data?.singlePoke.sprites.front_shiny" alt="">
+  <h2 mat-dialog-title>{{data?.singlePoke.name | uppercase}}</h2>
+</div>
+
+<mat-dialog-content>
+  <mat-chip-list>
+    <mat-chip *ngFor="let type of data?.singlePoke.types" color="accent" selected>
+      {{type.type.name}}
+    </mat-chip>
+  </mat-chip-list>
+
+  <p><strong>Height: </strong>{{data?.singlePoke.height}}m  
+  <strong>Weight: </strong>{{data?.singlePoke.weight}}kg</p>
+  
+  <p><strong>Base XP: </strong>{{data?.singlePoke.base_experience}}</p>
+
+</mat-dialog-content>

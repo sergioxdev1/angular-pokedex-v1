@@ -1,0 +1,17 @@
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index:1;
+  height: 45px;
+}
+
+.app-content {
+  padding: 20px;
+  height: 100vh;
+}
+
+.app-sidenav {
+  padding: 10px;
+  min-width: 300px;
+}
